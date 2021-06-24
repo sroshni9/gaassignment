@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          dataLayer = [];
+        </script>
+        <script src="script.js"></script>
+        <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-5FHKV43');</script>
+                <!-- End Google Tag Manager -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193196977-1"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+    
+                gtag('config', 'UA-193196977-1');
+                </script>
+    </head>
+<body>
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FHKV43"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+<form action="images.html" method="get" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" onclick="dataLayer.push({'event': 'formfieldclick', 'fieldname': 'name'});"><br><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" onclick="dataLayer.push({'event': 'formfieldclick', 'fieldname': 'email'});"><br><br>
+    <label for="mob">Mobile:</label>
+    <input type="tel" id="mob" name="mob" onclick="dataLayer.push({'event': 'formfieldclick', 'fieldname': 'mobile'});"><br><br>
+    <label for="mob">DOB:</label>
+    
+<SELECT id ="day" name = "dd" onclick="change_day()">
+  
+</SELECT>
+<SELECT id ="month" name = "mm">
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </SELECT>
+<SELECT id ="year" name = "yyyy" onclick="change_year()">
+</SELECT>
+    <br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" checked="checked"><label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

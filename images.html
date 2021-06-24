@@ -1,0 +1,65 @@
+<html>
+    <head>
+         <script>
+          dataLayer = [];
+        </script>
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="script.js"></script>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5FHKV43');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193196977-1"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-193196977-1');
+            </script>
+    </head>
+    <body>
+         <!-- Google Tag Manager (noscript) -->
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FHKV43"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+        <input type="radio" name="car" id="nissan" class="input-hidden" />
+            <label for="nissan" onclick="dataLayer.push({'event': 'imgclick', 'timetaken': event.timeStamp, 'img_name': 'nissan'});">
+            <img src="images/nissan.png" />
+            </label>
+
+    <input 
+    type="radio" name="car"
+    id="mitsubishi" class="input-hidden" onclick="dataLayer.push({'event': 'imgclick', 'timetaken': event.timeStamp, 'img_name': 'mitsubishi'});"/>
+    <label for="mitsubishi">
+    <img src="images/mitsubishi.png"/>
+    </label>
+
+    <input 
+    type="radio" name="car"
+    id="jaguar" class="input-hidden" onclick="dataLayer.push({'event': 'imgclick', 'timetaken': event.timeStamp, 'img_name': 'jaguar'});"/>
+    <label for="jaguar">
+    <img src="images/jaguar.png"/>
+    </label>
+
+    <input 
+    type="radio" name="car"
+    id="renault" class="input-hidden" onclick="dataLayer.push({'event': 'imgclick', 'timetaken': event.timeStamp, 'img_name': 'renault'});"/>
+    <label for="renault">
+    <img src="images/renault.png"/>
+    </label>
+
+    <input 
+    type="radio" name="car"
+    id="bmw" class="input-hidden" onclick="dataLayer.push({'event': 'imgclick', 'timetaken': event.timeStamp, 'img_name': 'bmw'});"/>
+    <label for="bmw">
+    <img src="images/bmw.png"/>
+    </label>
+
+    <button onclick="sendimage();">Next</button>
+    </body>
+</html>
