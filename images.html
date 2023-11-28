@@ -1,5 +1,12 @@
 <html>
     <head>
+         <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NTGMWD2');</script>
+<!-- End Google Tag Manager -->
         <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEXRRLHN7D"></script>
     <script>
@@ -8,34 +15,9 @@
       gtag('js', new Date());
       gtag('config', 'G-VEXRRLHN7D');
     </script>
+        
          <script>
           dataLayer = [];
-             gtag("event", "view_item_list", {
-  item_list_id: "related_products",
-  item_list_name: "Related products",
-  items: [
-    {
-      item_id: "SKU_12345",
-      item_name: "Stan and Friends Tee",
-      affiliation: "Google Merchandise Store",
-      coupon: "SUMMER_FUN",
-      discount: 2.22,
-      index: 0,
-      item_brand: "Google",
-      item_category: "Apparel",
-      item_category2: "Adult",
-      item_category3: "Shirts",
-      item_category4: "Crew",
-      item_category5: "Short sleeve",
-      item_list_id: "related_products",
-      item_list_name: "Related Products",
-      item_variant: "green",
-      location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-      price: 9.99,
-      quantity: 1
-    }
-  ]
-});
         </script>
         <link rel="stylesheet" href="style.css"></link>
         <script src="script.js"></script>
@@ -68,7 +50,23 @@
 
     <input 
     type="radio" name="car"
-    id="mitsubishi" class="input-hidden" onclick="dataLayer.push({'event': 'imgclick', 'timetaken': event.timeStamp, 'img_name': 'mitsubishi'});"/>
+    id="mitsubishi" class="input-hidden" onclick="dataLayer.push({
+  event: 'view_item',
+  ecommerce: {
+    items: [{
+      item_name: 'Finnish magical parka',
+      item_id: 'mp1122',
+      price: '31.10',
+      item_brand: 'PARKA4LIFE',
+      item_category: 'Apparel',
+      item_category2: 'Coats',
+      item_category3: 'Parkas',
+      item_category4: 'Unisex',
+      item_variant: 'Navy blue',
+      quantity: '1'
+    }]
+  }
+});"/>
     <label for="mitsubishi">
     <img src="images/mitsubishi.png"/>
     </label>
